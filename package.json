@@ -1,0 +1,20 @@
+{
+  "name": "magaya-br-danfecloud",
+  "version": "1.0.0",
+  "description": "gerar arquivo pdf da danfe",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm link @magaya/hyperion-express-middleware",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "commander": "^6.1.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "temp-dir": "^2.0.0"
+  }
+}

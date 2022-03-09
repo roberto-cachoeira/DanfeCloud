@@ -1,0 +1,45 @@
+{
+	"id": {
+		"company": "magayabr",
+		"name": "danfecloud"
+	},
+	"version": "1.0.0",
+	"minimumMagayaVersion": "11.0.2",
+	"type": "httpServer",
+	"license": {},
+	"install": {
+		"engine": "node",
+	        "manager": "npm",
+        	"name": "danfecloud"
+	},
+	"launch": {
+		"engine": "pm2",
+		"cluster": true,
+		"main": "./index.js"
+	},
+	"interface": {
+		"title": "DANFE",
+		"sections": {			
+			"cargoRelease": {
+				"menuEntries": [{
+					"category": "Actions",
+					"title": "Gerar e Anexar Danfe",
+					"selection": "single",
+					"type": "url",
+					"method": "GET",
+					"path": "/danfe-pdf/{operation-guid}",
+					"pathType": "cs-relative"					
+				},
+				{
+					"category": "Actions",
+					"title": "Gerar e Anexar Danfe Simplificado",
+					"selection": "single",
+					"type": "url",
+					"method": "GET",
+					"path": "/danfe-simplificado-pdf/{operation-guid}",
+					"pathType": "cs-relative"					
+				}]
+			}
+		}
+	}
+}
